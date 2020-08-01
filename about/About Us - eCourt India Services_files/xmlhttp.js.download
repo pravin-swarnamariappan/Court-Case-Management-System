@@ -1,0 +1,37 @@
+function xmlHTTP_send_post(t,e){return xmlHttp?(xmlHttp.open("POST",t,!1),xmlHttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),xmlHttp.send(e),xmlHttp.responseText):""}function xmlHttpRequest(t){function e(){var t;if(window.ActiveXObject)try{t=new ActiveXObject("Microsoft.XMLHTTP")}catch(e){t=!1}else try{t=new XMLHttpRequest}catch(e){t=!1}return t?t:void alert("Error creating the XMLHttpRequest object.")}var n=e();return n.open("POST",t,!1),n.send(null),200==n.status?n.responseText:void alert("There was a problem accessing the server: "+n.statusText)}var totalTokens=0,xmlHttp;if(!xmlHttp)try{xmlHttp=new XMLHttpRequest}catch(e){xmlHttp=!1}
+
+
+/*function xmlHTTP_send_get(t){var xhr = new XMLHttpRequest();
+
+xhr.open('GET', t.receiver.replace(/(?:\?.*)?$/, t.segments.length > 0 ? "?" + t.segments.join("&") : ""), true);
+xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4) {
+       return xhr.responseText;
+    }
+}
+xhr.send(null);}*/
+
+
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
+
+function httpGetAsync(theUrl,callback)
+{
+ var xmlHttp = new XMLHttpRequest();
+   
+    xmlHttp.open("GET", theUrl, true); // true for asynchronous 
+   
+	 xmlHttp.onreadystatechange = function() { 
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+		{
+			//alert('ddd'+xmlHttp.readyState)
+            callback(xmlHttp.responseText);
+		}
+    }
+	 xmlHttp.send(null);
+}
