@@ -4,7 +4,7 @@ Its a SIH 2020 Dynamic Developers Team Repository by S.M.Pravin From K.Ramakrish
 Problem Statement       : Court Case Management System 
 Technology Bucket       : Software – Web Development 
 Team Leader Name        : S.M.Pravin
-Guided By               : Dr.T.Avudaiappan, M.E., Phd ,Mr.I.Anant Raj, M.E ., M.B.A., (Phd)
+Guided By               : Dr.T.Avudaiappan, M.E., PhD ,Mr.I.Anant Raj, M.E ., M.B.A., (PhD)
 Team Members Name       : P.Siva Kumar, D.Prithivi Raj, T.G.R.Nitheeshwar, S.Narmadha, S.Keerthana
 
 
