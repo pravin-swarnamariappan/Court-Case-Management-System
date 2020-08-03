@@ -48,7 +48,7 @@
 }
 #cssmenu.align-right > ul > li > a {
   margin-right: 0;
-  margin-left: -4px;
+  margin-left: -3px;
 }
 #cssmenu > ul > li > a {
   z-index: 2;
